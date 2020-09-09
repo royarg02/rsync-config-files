@@ -15,51 +15,50 @@
 # (uncomment the files you don't need)        #
 ###############################################
 
-#.android
-#.AndroidStudio*/
+.android
+.AndroidStudio*/
 #Android/Sdk
-#.gradle
-#.gvm
-#.grails/
-#.grails_history
-#.kde/share/apps/nepomuk
-#.local/share/notbit
-#.local/libvirt
-#.local/share/libvirt
-#.vagrant
-#.vagrant.d
-#.wine
-#.twister
-#/twister
-#Applications/eclipse*
+.gradle
+.gvm
+.grails/
+.grails_history
+.kde/share/apps/nepomuk
+.local/share/notbit
+.local/libvirt
+.vagrant
+.vagrant.d
+.wine
+.twister
+/twister
+Applications/eclipse*
 #/Downloads
-#*Popcorntime*
-#/.aMule
-#/Scribus
-#/VirtualBox*
-#/Nextcloud
-#_build
+*Popcorntime*
+/.aMule
+/Scribus
+/VirtualBox*
+/Nextcloud
+_build
 #
 ## Ruby gems
-#.rvm
+.rvm
 #
 ## Add Game Folders here:
 #
-#/games
-#.local/share/Steam
-#.steam
-#/Steam
-#.minecraft
-#.technic
-#.PlayOnLinux
-#.local/share/lutris/runners/wine/
+.technic
+.local/share/lutris/runners/wine/
+/games
+.local/share/Steam
+.steam
+/Steam
+.minecraft
+.PlayOnLinux
 #
 ## Spotify
-#.config/spotify/Users
+.config/spotify/Users
 #
 ## those folders contain only temporary Videos I want to watch
-#/Videos
-#/Movies
+/Videos
+/Movies
 #
 ## some history files
 #.python_history
@@ -77,7 +76,14 @@
 #/.m2
 #
 ## Unlocked Plasma Vaults
-#/Vaults
+/Vaults
+
+## Chrome/Chromium
+.config/google-chrome
+.config/chromium
+
+## Brave Browser
+.config/BraveSoftware
 
 ################################################
 # These directories may definitely be excluded #
@@ -122,6 +128,9 @@
 # Contains errors from the current graphical session
 .xsession-errors
 .wayland-errors
+
+# Monitors
+.config/monitors*
 
 # Recently used files
 .local/share/RecentDocuments
@@ -204,6 +213,8 @@ Thumbs.db
 .mozilla/firefox/*/compreg.dat
 # cached plugin data, recreated
 .mozilla/firefox/*/pluginreg.dat
+# profile specific
+#.mozilla/firefox/*default*
 
 #SeaMonkey-specific (see also Profile folder):
 
@@ -348,13 +359,25 @@ nohup.out
 .config/Atom/IndexedDB
 .atom/compile-cache/
 
+# Postman
+.config/Postman/blob_storage
+.config/Postman/logs
+.config/Postman/GPUCache
+
+# GitKraken
+.config/GitKraken/blob_storage
+
+# Typora
+.config/Typora/GPUCache
+.config/Typora/blob_storage
+
 # Vim
 .vim/bundle/*
 .viminfo
 
 # VS Code
-.vscode-oss/extensions/*
-.vscode/extensions/*
+#.vscode-oss/extensions/*
+#.vscode/extensions/*
 .config/Code - OSS/blob_storage/
 .config/Code - OSS/GPUCache/
 .config/Code - OSS/logs/
@@ -362,13 +385,23 @@ nohup.out
 .config/Code/GPUCache/
 .config/Code/logs/
 
+<<<<<<< HEAD
 # MS Teams
 .config/Microsoft/Microsoft Teams/Application Cache
 .config/Microsoft/Microsoft Teams/Cache
 .config/Microsoft/Microsoft Teams/GPUCache
+=======
+# VSCodium
+.config/VSCodium/CachedData
+.config/VSCodium/GPUCache
+.config/VSCodium/logs
+>>>>>>> 32eef68... Some of my customizations
 
 # VirtualBox
 .config/VirtualBox/VBoxSVC.log*
+
+# OBS
+.config/obs-studio/logs
 
 # Rust artefacts
 .cargo
@@ -384,5 +417,19 @@ go/pkg/mod/cache
 .ccache/?
 .ccache/tmp
 
+<<<<<<< HEAD
 # Nvidia OpenGL Shader Cache
 .nv/GLCache
+=======
+# Stremio
+.streamio-server
+
+#Transmission
+.config/transmission/resume
+
+#rsync results
+rsync_res.txt
+
+# Dart
+.dartServer
+>>>>>>> 32eef68... Some of my customizations
