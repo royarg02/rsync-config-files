@@ -1,23 +1,25 @@
-# rsync-homedir-excludes
-#
-# A list of files to exclude when backing up *nix home directories using rsync.
-#
-# Author: Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
-# Version: 2019-11-30
-#
-# #Usage:
-#    USER=<homedir username here>
-#    rsync -aP --exclude-from=rsync-homedir-excludes.txt /home/$USER/ /media/$USER/linuxbackup/home/$USER/
+### rsync-homedir-excludes
+###
+### A list of files to exclude when backing up *nix home directories using rsync.
+###
+### Original author: Ruben Barkow-Kuder <https://github.com/rubo77/rsync-homedir-excludes>
+###
+### Usage:
+###    USER=<homedir username here>
+###    rsync -aP --exclude-from=rsync-homedir-excludes.txt /home/$USER/ /media/$USER/linuxbackup/home/$USER/
 
+#╔════════════════════════════════════════════════════════════════════════════╗
+#║ Directories that will not be backed up.                                    ║
+#║ Comment the files, or delete the lines, to actually back them up.          ║
+#╚════════════════════════════════════════════════════════════════════════════╝
 
-###############################################
-# directories, probably not worth a backup    #
-# (uncomment the files you don't need)        #
-###############################################
+#╔════════════════════════════════════════════════════════════════════════════╗
+#║ Probably not worth a backup.                                               ║
+#╚════════════════════════════════════════════════════════════════════════════╝
 
 .android
 .AndroidStudio*/
-#Android/Sdk
+# Android/Sdk
 .gradle
 .gvm
 .grails/
@@ -38,12 +40,11 @@ Applications/eclipse*
 /VirtualBox*
 /Nextcloud
 _build
-#
+
 ## Ruby gems
 .rvm
-#
-## Add Game Folders here:
-#
+
+## Game folders
 .technic
 .local/share/lutris/runners/wine/
 /games
@@ -52,29 +53,30 @@ _build
 /Steam
 .minecraft
 .PlayOnLinux
-#
+
 ## Spotify
 .config/spotify/Users
-#
-## those folders contain only temporary Videos I want to watch
+
+## These folders contain temporary videos
 /Videos
 /Movies
-#
+
 ## some history files
 #.python_history
 #.bash_history
 #.zsh_history
 #.mysql_history
-#
+.lesshst
+
 ## Python eggs
 #.local/lib/python*
-#
+
 ## Python virtual environments
 #PycharmProjects/**/venv
-#
+
 ## Maven local repository
-#/.m2
-#
+.m2
+
 ## Unlocked Plasma Vaults
 /Vaults
 
@@ -85,54 +87,56 @@ _build
 ## Brave Browser
 .config/BraveSoftware
 
-################################################
-# These directories may definitely be excluded #
-################################################
+#╔════════════════════════════════════════════════════════════════════════════╗
+#║ Definitely not worth a backup.                                             ║
+#╚════════════════════════════════════════════════════════════════════════════╝
 
-# Contains mounted file systems:
-
+## Contains mounted file systems:
 .gvfs
 .local/share/gvfs-metadata
-# contains the actual encrypted home directory
+
+## Contains the actual encrypted home directory
 /.Private
 
-# Session-specific:
+## Session-specific
 /.dbus
 .cache
 /.Trash
 .Trash-1*
 .local/share/Trash
 /Trash
+.Xauthority
+.ICEauthority
+.gksu.lock
+.pulse
+.pulse-cookie
+.esd_auth
 
-# Cached info about audio CDs:
+## Cached info about audio CDs
 .cddb
 
-# Cached packages lists:
+## Cached packages lists
 .aptitude
-
-# Node Package Manager cache
+## Node Package Manager cache
 .npm
 
-# Node Version Manager
+## Node Version Manager
 .nvm
-
-#Flash-specific:
 
 # Cache for flash, maybe others?
 .adobe
-# except for Flash persistence, there is no reason to keep this
+# Except for Flash persistence, there is no reason to keep this
 .macromedia
-
-#Files:
 
 # Contains errors from the current graphical session
 .xsession-errors
+.xsession-errors.old
 .wayland-errors
 
-# Monitors
+## Monitors
 .config/monitors*
 
-# Recently used files
+## Recently used files
 .local/share/RecentDocuments
 .recently-used
 .recently-used.xbel
@@ -146,100 +150,106 @@ Thumbs.db
 .zcompdump*
 .wget-hsts
 
-# Common Unix Printing System
+## Common Unix Printing System
 /.cups
 
-# run-time configuration information for Subversion
+## Run-time configuration information for Subversion
 /.subversion
 
-# Python virtual environments
+## Python virtual environments
 /.virtualenvs
 
-# Session-specific
-.Xauthority
-.ICEauthority
-.gksu.lock
-.pulse
-.pulse-cookie
-.esd_auth
-
-#KDE specific:
-
-# Recent documents on KDE
+## Recent documents on KDE
 .kde/share/apps/RecentDocuments
 .kde4/share/apps/RecentDocuments
-# Contains a history of the Klipper clipboard (KDE)
+
+## Contains a history of the Klipper clipboard (KDE)
 .kde/share/apps/klipper
 .kde4/share/apps/klipper
 .local/share/klipper
-# You will loose saved scrolling positions of PDFs
+
+## You will loose saved scrolling positions of PDFs
 .kde/share/apps/okular/docdata
 .kde/share/apps/gwenview/recentfolders
 .kde4/share/apps/okular/docdata
 .kde4/share/apps/gwenview/recentfolders
 .local/share/okular/docdata
 .local/share/org.kde.gwenview/recentfolders
-# Cached other users' profile pics
+
+## Cached other users' profile pics
 .kde/share/apps/kmess/displaypics
 .kde4/share/apps/kmess/displaypics
-# Cached emoticons of others
+
+## Cached emoticons of others
 .kde/share/apps/kmess/customemoticons
 .kde4/share/apps/kmess/customemoticons
 
-#Tor Browser supposed to not be backupped ;)
+## Tor Browser supposed to not be backupped ;)
 .local/share/torbrowser
 
-#Firefox-specific (see also Profile folder):
-
+## Firefox-specific (see also Profile folder):
 .mozilla/firefox/*/Cache
-# in case Fx crashes dumps will be stored in this
+
+## In case Fx crashes dumps will be stored in this
 .mozilla/firefox/*/minidumps
-# session-specific 
+
+## session-specific
 .mozilla/firefox/*/.parentlock
-# phishing database, recreated
+
+## phishing database, recreated
 .mozilla/firefox/*/urlclassifier3.sqlite
-# blacklisted extensions
+
+## blacklisted extensions
 .mozilla/firefox/*/blocklist.xml
-# extension database, recreated on startup
+
+## extension database, recreated on startup
 .mozilla/firefox/*/extensions.sqlite
 .mozilla/firefox/*/extensions.sqlite-journal
 .mozilla/firefox/*/extensions.rdf
 .mozilla/firefox/*/extensions.ini
 .mozilla/firefox/*/extensions.cache
-# cached UI data, recreated
+
+## cached UI data, recreated
 .mozilla/firefox/*/XUL.mfasl
 .mozilla/firefox/*/XPC.mfasl
 .mozilla/firefox/*/xpti.dat
 .mozilla/firefox/*/compreg.dat
-# cached plugin data, recreated
+
+## cached plugin data, recreated
 .mozilla/firefox/*/pluginreg.dat
-# profile specific
+
+## profile specific
 #.mozilla/firefox/*default*
 
-#SeaMonkey-specific (see also Profile folder):
-
+## SeaMonkey-specific (see also Profile folder):
 .mozilla/seamonkey/*/Cache
-# in case Fx crashes dumps will be stored in this
+
+## in case Fx crashes dumps will be stored in this
 .mozilla/seamonkey/*/minidumps
-# session-specific 
+
+## session-specific
 .mozilla/seamonkey/*/.parentlock
-# blacklisted extensions
+
+## blacklisted extensions
 .mozilla/seamonkey/*/blocklist.xml
-# extension database, recreated on startup
+
+## extension database, recreated on startup
 .mozilla/seamonkey/*/extensions.sqlite
 .mozilla/seamonkey/*/extensions.rdf
 .mozilla/seamonkey/*/extensions.ini
-# cached UI data, recreated
+
+## cached UI data, recreated
 .mozilla/seamonkey/*/xpti.dat
 .mozilla/seamonkey/*/compreg.dat
-# cached plugin data, recreated
+
+## cached plugin data, recreated
 .mozilla/seamonkey/*/pluginreg.dat
 
-# Thunderbird Cache in your profile folder
+## Thunderbird Cache in your profile folder
 .thunderbird/*/Cache
 
-#Opera-specific (related question on Superuser.com: Is documentation available on files and directories in the Opera profile folder?):
-
+## Opera-specific (related question on Superuser.com: Is documentation available
+## on files and directories in the Opera profile folder?):
 .opera/temporary_downloads
 .opera/cache
 .opera/thumbnails
@@ -249,11 +259,10 @@ Thumbs.db
 .opera/widgets/*/cache
 .opera/lock
 
-# Keychain dir (manage SSH and GPG keys, front-end to ssh-agent and ssh-add)
+## Keychain dir (manage SSH and GPG keys, front-end to ssh-agent and ssh-add)
 /.keychain
 
-#Komodo Edit:
-
+## Komodo Edit:
 .komodoedit/*/codeintel/db
 .komodoedit/*/host-*/*/codeintel
 .komodoedit/*/XRE/Cache
@@ -280,20 +289,18 @@ Thumbs.db
 .komodoedit/*/commandments.fifo
 .komodoedit/*/history.sqlite
 
-#GnuPG:
-
+## GnuPG:
 .gnupg/rnd
 .gnupg/random_seed
 .gnupg/.#*
 .gnupg/*.lock
 .gnupg/gpg-agent-info-*
 
-#Google Earth:
+## Google Earth:
 .googleearth/Temp
 .googleearth/Cache
 
-#Google Chrome:
-
+## Google Chrome:
 .config/google-chrome/ShaderCache
 .config/google-chrome/Default/Local Storage
 .config/google-chrome/Default/Session Storage
@@ -301,8 +308,7 @@ Thumbs.db
 .config/google-chrome/Default/History Index *
 .config/google-chrome/Default/Service Worker/CacheStorage
 
-#Chromium:
-
+##Chromium:
 .config/chromium/Default/Local Storage
 .config/chromium/Default/Session Storage
 .config/chromium/Default/Application Cache
@@ -311,10 +317,10 @@ Thumbs.db
 /snap/chromium/*/.config/chromium/Default/Service Worker/CacheStorage
 /snap/chromium/*/.local/share/
 
-#Riot
+## Riot
 /snap/riot-web/
 
-#Brave
+## Brave
 .config/BraveSoftware/Brave-Browser/Default/Feature Engagement Tracker/
 .config/BraveSoftware/Brave-Browser/Default/Local Storage/
 .config/BraveSoftware/Brave-Browser/Default/Service Worker/CacheStorage/
@@ -322,60 +328,59 @@ Thumbs.db
 .config/BraveSoftware/Brave-Browser/Safe Browsing/
 .config/BraveSoftware/Brave-Browser/ShaderCache/
 
-#Local repositories:
+## Local repositories:
 .gradle/caches
 /.m2/repository
 
-#indexer
+## Indexer
 .local/share/baloo
 .local/share/zeitgeist
 .local/share/akonadi
 
-#Other apps:
-
-# Pidgin
+## Pidgin
 .purple/icons
-# Cached applets
+
+## Cached applets
 .guayadeque/cache.db
 .java/deployment/cache
 .icedteaplugin
 .icedtea
 .gnome2/epiphany/favicon_cache
 
-# other temporary files
+## Other temporary files
 nohup.out
 
-# LibreOffice cache files
+## LibreOffice cache files
 .config/libreoffice/4/cache
 
-# freshplayerplugin LSO
+## Freshplayerplugin LSO
 .config/freshwrapper-data/Shockwave Flash/WritableRoot/#SharedObjects
 
-# Snap caches
+## Snap caches
 .config/*/Cache
 
-# Atom
+## Atom
 .config/Atom/*Cache
 .config/Atom/IndexedDB
 .atom/compile-cache/
 
-# Postman
+## Postman
 .config/Postman/blob_storage
 .config/Postman/logs
 .config/Postman/GPUCache
 
-# GitKraken
+## GitKraken
 .config/GitKraken/blob_storage
 
-# Typora
+## Typora
 .config/Typora/GPUCache
 .config/Typora/blob_storage
 
-# Vim
+## Vim
 .vim/bundle/*
 .viminfo
 
-# VS Code
+## VS Code
 #.vscode-oss/extensions/*
 #.vscode/extensions/*
 .config/Code - OSS/blob_storage/
@@ -385,50 +390,52 @@ nohup.out
 .config/Code/GPUCache/
 .config/Code/logs/
 
-# MS Teams
+## MS Teams
 .config/Microsoft/Microsoft Teams/Application Cache
 .config/Microsoft/Microsoft Teams/Cache
 .config/Microsoft/Microsoft Teams/GPUCache
-# VSCodium
+
+## VSCodium
 .config/VSCodium/CachedData
 .config/VSCodium/GPUCache
 .config/VSCodium/logs
 
-# VirtualBox
+## VirtualBox
 .config/VirtualBox/VBoxSVC.log*
 
-# OBS
+## OBS
 .config/obs-studio/logs
 
-# Rust artefacts
+## Rust artefacts
 .cargo
 .rustup
 
-# Erlang artefacts
+## Erlang artefacts
 .kerl
 
-# golang Cache
+## Golang Cache
 go/pkg/mod/cache
 
-# ccache, remove cache but keep config
+## Ccache, remove cache but keep config
 .ccache/?
 .ccache/tmp
 
-# Nvidia OpenGL Shader Cache
+## Nvidia OpenGL Shader Cache
 .nv/GLCache
-# Stremio
+
+## Stremio
 .streamio-server
 
-#Transmission
+## Transmission
 .config/transmission/resume
 
-#rsync results
+## rsync results
 rsync_res.txt
 
-# Dart
+## Dart
 .dartServer
 
-# Citrix ICA Client
+## Citrix ICA Client
 .ICAClient/logs
 .ICAClient/.tmp
 .ICAClient/cache/zlcache

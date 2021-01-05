@@ -2,6 +2,7 @@
 AppData
 NTUSER*
 ntuser*
+
 # Folders which I don't care
 OneDrive
 
@@ -19,6 +20,3 @@ Templates
 
 # Folders disallowed to backup by Windows
 MicrosoftEdgeBackups
-
-
-
