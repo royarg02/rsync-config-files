@@ -385,17 +385,14 @@ nohup.out
 .config/Code/GPUCache/
 .config/Code/logs/
 
-<<<<<<< HEAD
 # MS Teams
 .config/Microsoft/Microsoft Teams/Application Cache
 .config/Microsoft/Microsoft Teams/Cache
 .config/Microsoft/Microsoft Teams/GPUCache
-=======
 # VSCodium
 .config/VSCodium/CachedData
 .config/VSCodium/GPUCache
 .config/VSCodium/logs
->>>>>>> 32eef68... Some of my customizations
 
 # VirtualBox
 .config/VirtualBox/VBoxSVC.log*
@@ -417,10 +414,8 @@ go/pkg/mod/cache
 .ccache/?
 .ccache/tmp
 
-<<<<<<< HEAD
 # Nvidia OpenGL Shader Cache
 .nv/GLCache
-=======
 # Stremio
 .streamio-server
 
@@ -432,4 +427,9 @@ rsync_res.txt
 
 # Dart
 .dartServer
->>>>>>> 32eef68... Some of my customizations
+
+# Citrix ICA Client
+.ICAClient/logs
+.ICAClient/.tmp
+.ICAClient/cache/zlcache
+
