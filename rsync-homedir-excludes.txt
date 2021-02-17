@@ -184,7 +184,12 @@ Thumbs.db
 .kde/share/apps/kmess/customemoticons
 .kde4/share/apps/kmess/customemoticons
 
-## Tor Browser supposed to not be backupped ;)
+#Gnome specific:
+
+# tracker data files
+.local/share/tracker
+
+#Tor Browser supposed to not be backupped ;)
 .local/share/torbrowser
 
 ## Firefox-specific (see also Profile folder):
@@ -402,6 +407,7 @@ nohup.out
 
 ## VirtualBox
 .config/VirtualBox/VBoxSVC.log*
+.config/VirtualBox/VBoxGuestAdditions_*
 
 ## OBS
 .config/obs-studio/logs
