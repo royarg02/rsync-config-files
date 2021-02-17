@@ -1,4 +1,4 @@
-# rsync-homedir-excludes
+# rsync-config-files
 
 This repo is forked from <https://github.com/rubo77/rsync-homedir-excludes>, with some of my additions to backup from the windows user drive and some other data drives as well. Original repository [README](https://github.com/rubo77/rsync-homedir-excludes/blob/master/README.md) follows, with updated text and formatting.
 
