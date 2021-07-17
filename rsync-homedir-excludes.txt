@@ -446,3 +446,5 @@ rsync_res.txt
 .ICAClient/.tmp
 .ICAClient/cache/zlcache
 
+# Geany IDE - socket file
+.config/geany/geany_socket_*
