@@ -1,0 +1,13 @@
+Alarms
+Android
+Lazylist
+Pictures/.thumbnails
+PixelExperience-Updates
+Podcasts
+TWRP
+UtxAuthErrorReport
+WhatsApp/.Shared
+WhatsApp/.StickerThumbs
+WhatsApp/.Thumbs
+WhatsApp/.trash
+WhatsApp/Backups
