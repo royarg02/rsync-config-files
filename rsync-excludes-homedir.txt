@@ -17,10 +17,6 @@
 #║ Probably not worth a backup.                                               ║
 #╚════════════════════════════════════════════════════════════════════════════╝
 
-.android
-.AndroidStudio*/
-# Android/Sdk
-.gradle
 .gvm
 .grails/
 .grails_history
@@ -40,6 +36,8 @@ Applications/eclipse*
 /VirtualBox*
 /Nextcloud
 _build
+.java
+.pki
 
 ## Ruby gems
 .rvm
@@ -91,6 +89,12 @@ _build
 #║ Definitely not worth a backup.                                             ║
 #╚════════════════════════════════════════════════════════════════════════════╝
 
+## Android/Android Studio
+.android
+.config/android
+.AndroidStudio*
+.config/Google
+
 ## Contains mounted file systems:
 .gvfs
 .local/share/gvfs-metadata
@@ -117,18 +121,20 @@ _build
 
 ## Cached packages lists
 .aptitude
+
 ## Node Package Manager cache
 .npm
 
 ## Node Version Manager
 .nvm
 
-# Cache for flash, maybe others?
+## Cache for flash, maybe others?
 .adobe
-# Except for Flash persistence, there is no reason to keep this
+
+## Except for Flash persistence, there is no reason to keep this
 .macromedia
 
-# Contains errors from the current graphical session
+## Contains errors from the current graphical session
 .xsession-errors
 .xsession-errors.old
 .wayland-errors
@@ -141,6 +147,7 @@ _build
 .recently-used
 .recently-used.xbel
 recently-used.xbel
+.local/share/recently-used.xbel
 .thumbnails
 .thumb
 Thumbs.db
@@ -184,9 +191,7 @@ Thumbs.db
 .kde/share/apps/kmess/customemoticons
 .kde4/share/apps/kmess/customemoticons
 
-#Gnome specific:
-
-# tracker data files
+## tracker data files
 .local/share/tracker
 
 #Tor Browser supposed to not be backupped ;)
@@ -224,7 +229,8 @@ Thumbs.db
 .mozilla/firefox/*/pluginreg.dat
 
 ## profile specific
-#.mozilla/firefox/*default*
+.mozilla/firefox/*default*
+.mozilla/firefox/*private*
 
 ## SeaMonkey-specific (see also Profile folder):
 .mozilla/seamonkey/*/Cache
@@ -300,6 +306,11 @@ Thumbs.db
 .gnupg/.#*
 .gnupg/*.lock
 .gnupg/gpg-agent-info-*
+.local/share/gnupg/rnd
+.local/share/gnupg/random_seed
+.local/share/gnupg/.#*
+.local/share/gnupg/*.lock
+.local/share/gnupg/gpg-agent-info-*
 
 ## Google Earth:
 .googleearth/Temp
@@ -335,6 +346,7 @@ Thumbs.db
 
 ## Local repositories:
 .gradle/caches
+.local/share/gradle/caches
 /.m2/repository
 
 ## Indexer
@@ -440,6 +452,7 @@ go/pkg/mod/cache
 rsync_res.txt
 
 ## Dart
+.dart
 .dartServer
 
 ## Citrix ICA Client
