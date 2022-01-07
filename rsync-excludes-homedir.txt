@@ -95,6 +95,29 @@ _build
 .AndroidStudio*
 .config/Google
 
+# Version controlled Flutter/Android projects
+.local/src/github/**/build
+.local/src/github/**/*.class
+.local/src/github/**/.log
+.local/src/github/**/.pyc
+.local/src/github/**/.swp
+.local/src/github/**/.DS_Store
+.local/src/github/**/.atom
+.local/src/github/.buildlog
+.local/src/github/**/.history
+.local/src/github/**/.svn
+.local/src/github/**/.iml
+.local/src/github/**/.ipr
+.local/src/github/**/.iws
+.local/src/github/**/.idea
+.local/src/github/**/doc/api
+.local/src/github/**/.dart_tool
+.local/src/github/**/.pub-cache
+.local/src/github/**/.pub
+
+# Other version controlled projects
+.local/src/github/**/node_modules
+
 ## Contains mounted file systems:
 .gvfs
 .local/share/gvfs-metadata

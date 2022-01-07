@@ -1,49 +1,26 @@
 # Local Flutter/Android projects
-/AndroidStudioProjects/**/build
-/AndroidStudioProjects/**/*.class
-/AndroidStudioProjects/**/.log
-/AndroidStudioProjects/**/.pyc
-/AndroidStudioProjects/**/.swp
-/AndroidStudioProjects/**/.DS_Store
-/AndroidStudioProjects/**/.atom
-/AndroidStudioProjects/**/.buildlog
-/AndroidStudioProjects/**/.history
-/AndroidStudioProjects/**/.svn
-/AndroidStudioProjects/**/.iml
-/AndroidStudioProjects/**/.ipr
-/AndroidStudioProjects/**/.iws
-/AndroidStudioProjects/**/.idea
-/AndroidStudioProjects/**/doc/api
-/AndroidStudioProjects/**/.dart_tool
-/AndroidStudioProjects/**/.pub-cache
-/AndroidStudioProjects/**/.pub
-
-# Version controlled Flutter/Android projects
-/Git/**/build
-/Git/**/*.class
-/Git/**/.log
-/Git/**/.pyc
-/Git/**/.swp
-/Git/**/.DS_Store
-/Git/**/.atom
-/Git/.buildlog
-/Git/**/.history
-/Git/**/.svn
-/Git/**/.iml
-/Git/**/.ipr
-/Git/**/.iws
-/Git/**/.idea
-/Git/**/doc/api
-/Git/**/.dart_tool
-/Git/**/.pub-cache
-/Git/**/.pub
-
-# Other version controlled projects
-/Git/**/node_modules
+**/android/**/build
+**/android/**/*.class
+**/android/**/.log
+**/android/**/.pyc
+**/android/**/.swp
+**/android/**/.DS_Store
+**/android/**/.atom
+**/android/**/.buildlog
+**/android/**/.history
+**/android/**/.svn
+**/android/**/.iml
+**/android/**/.ipr
+**/android/**/.iws
+**/android/**/.idea
+**/android/**/doc/api
+**/android/**/.dart_tool
+**/android/**/.pub-cache
+**/android/**/.pub
 
 # Miscellaneous
-/System Volume Information
-/$RECYCLE.BIN
+System Volume Information
+$RECYCLE.BIN
 
 # Installed Programs
-/Installs
+Installs
