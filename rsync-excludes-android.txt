@@ -9,7 +9,8 @@ Android/media/com.whatsapp/WhatsApp/Backups
 Android/media/com.whatsapp/WhatsApp/Media/.Links
 Android/media/com.whatsapp/WhatsApp/Media/.Statuses
 Lazylist
-Pictures/.thumbnails
+**/.thumbnails
+**/.trashed-*
 PixelExperience-Updates
 Podcasts
 TWRP
