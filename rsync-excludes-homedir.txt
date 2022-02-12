@@ -34,6 +34,7 @@ Applications/eclipse*
 /.aMule
 /Scribus
 /VirtualBox*
+.local/share/gnome-boxes/images
 /Nextcloud
 _build
 .java
@@ -47,6 +48,7 @@ _build
 .local/share/lutris/runners/wine/
 /games
 .local/share/Steam
+.var/app/com.valvesoftware.Steam/.local/share/Steam
 .steam
 /Steam
 .minecraft
@@ -54,6 +56,7 @@ _build
 
 ## Spotify
 .config/spotify/Users
+.var/app/com.spotify.Client/config/spotify/Users
 
 ## These folders contain temporary videos
 /Videos
@@ -77,7 +80,9 @@ _build
 
 ## Unlocked Plasma Vaults
 /Vaults
-
+## Docker
+.docker/machine
+.local/share/containers
 ## Chrome/Chromium
 .config/google-chrome
 .config/chromium
@@ -128,6 +133,8 @@ _build
 ## Session-specific
 /.dbus
 .cache
+.var/app/*/cache
+.var/app/*/.cache
 /.Trash
 .Trash-1*
 .local/share/Trash
@@ -350,6 +357,7 @@ Thumbs.db
 ##Chromium:
 .config/chromium/*/Local Storage
 .config/chromium/*/Session Storage
+.config/chromium/*/Service Worker/CacheStorage
 .config/chromium/*/Application Cache
 .config/chromium/*/History Index *
 /snap/chromium/common/.cache
@@ -405,16 +413,7 @@ nohup.out
 .atom/compile-cache/
 
 ## Postman
-.config/Postman/blob_storage
 .config/Postman/logs
-.config/Postman/GPUCache
-
-## GitKraken
-.config/GitKraken/blob_storage
-
-## Typora
-.config/Typora/GPUCache
-.config/Typora/blob_storage
 
 ## Vim
 .vim/bundle/*
@@ -423,23 +422,13 @@ nohup.out
 ## VS Code
 #.vscode-oss/extensions/*
 #.vscode/extensions/*
-.config/Code - OSS/blob_storage/
-.config/Code - OSS/GPUCache/
 .config/Code - OSS/logs/
-.config/Code/blob_storage/
-.config/Code/GPUCache/
 .config/Code/logs/
-
-## MS Teams
-.config/Microsoft/Microsoft Teams/Application Cache
-.config/Microsoft/Microsoft Teams/Cache
-.config/Microsoft/Microsoft Teams/Code Cache
-.config/Microsoft/Microsoft Teams/GPUCache
+.config/Code/CachedData/*
 
 ## VSCodium
-.config/VSCodium/CachedData
-.config/VSCodium/GPUCache
 .config/VSCodium/logs
+.config/VSCodium/CachedExtensionVSIXs
 
 ## VirtualBox
 .config/VirtualBox/VBoxSVC.log*
@@ -489,3 +478,17 @@ rsync_res.txt
 # LBRY
 .config/lbry
 .local/share/lbry/lbrynet
+
+# Electron Apps
+.config/*/blob_storage
+.config/*/Application Cache
+.config/*/Cache
+.config/*/CachedData
+.config/*/Code Cache
+.config/*/GPUCache
+.var/app/**/blob_storage
+.var/app/**/Application Cache
+.var/app/**/Cache
+.var/app/**/CachedData
+.var/app/**/Code Cache
+.var/app/**/GPUCache
