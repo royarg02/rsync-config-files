@@ -59,8 +59,8 @@ _build
 .var/app/com.spotify.Client/config/spotify/Users
 
 ## These folders contain temporary videos
-/Videos
-/Movies
+#/Videos
+#/Movies
 
 ## some history files
 #.python_history
