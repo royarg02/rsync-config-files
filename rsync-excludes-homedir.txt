@@ -480,12 +480,12 @@ rsync_res.txt
 .local/share/lbry/lbrynet
 
 # Electron Apps
-.config/*/blob_storage
-.config/*/Application Cache
-.config/*/Cache
-.config/*/CachedData
-.config/*/Code Cache
-.config/*/GPUCache
+.config/**/blob_storage
+.config/**/Application Cache
+.config/**/Cache
+.config/**/CachedData
+.config/**/Code Cache
+.config/**/GPUCache
 .var/app/**/blob_storage
 .var/app/**/Application Cache
 .var/app/**/Cache
