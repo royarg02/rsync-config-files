@@ -94,6 +94,9 @@ _build
 #║ Definitely not worth a backup.                                             ║
 #╚════════════════════════════════════════════════════════════════════════════╝
 
+# Chroot environments
+**/*chroot
+
 ## Android/Android Studio
 .android
 .config/android
