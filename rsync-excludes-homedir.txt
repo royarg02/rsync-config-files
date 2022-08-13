@@ -466,9 +466,14 @@ go/pkg/mod/cache
 ## rsync results
 rsync_res.txt
 
-## Dart
+## Misc Dart configs
 .dart
 .dartServer
+
+## Misc Flutter configs and caches
+.flutter
+.flutter-devtools
+**/flutter*/bin/cache
 
 ## Citrix ICA Client
 .ICAClient/logs
