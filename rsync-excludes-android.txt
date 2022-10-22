@@ -11,6 +11,7 @@ Android/media/com.whatsapp/WhatsApp/Media/.Statuses
 Lazylist
 **/.thumbnails
 **/.trashed-*
+NikGapps
 PixelExperience-Updates
 Podcasts
 TWRP
