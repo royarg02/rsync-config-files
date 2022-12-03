@@ -199,6 +199,9 @@ Thumbs.db
 ## Python virtual environments
 /.virtualenvs
 
+# Lock / Pid files
+.VeraCrypt-lock-*
+
 ## Recent documents on KDE
 .kde/share/apps/RecentDocuments
 .kde4/share/apps/RecentDocuments
