@@ -18,6 +18,9 @@
 **/android/**/.pub-cache
 **/android/**/.pub
 
+# Local NodeJS projects
+**/node_modules
+
 # Miscellaneous
 System Volume Information
 $RECYCLE.BIN
