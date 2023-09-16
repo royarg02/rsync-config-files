@@ -21,5 +21,6 @@ Documents/My Music
 Documents/My Pictures
 Documents/My Videos
 
-# Folders disallowed to backup by Windows
-MicrosoftEdgeBackups
+# Installation
+Games
+

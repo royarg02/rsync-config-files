@@ -477,6 +477,7 @@ rsync_res.txt
 .flutter
 .flutter-devtools
 **/flutter*/bin/cache
+**/puro/shared
 
 ## Citrix ICA Client
 .ICAClient/logs
