@@ -362,6 +362,7 @@ Thumbs.db
 .config/google-chrome/*/WebStorage/*/CacheStorage
 
 ##Chromium:
+.config/chromium/ShaderCache
 .config/chromium/*/Local Storage
 .config/chromium/*/Session Storage
 .config/chromium/*/Service Worker/CacheStorage
