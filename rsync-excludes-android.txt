@@ -6,8 +6,13 @@ Android/media/com.whatsapp/WhatsApp/.StickerThumbs
 Android/media/com.whatsapp/WhatsApp/.Thumbs
 Android/media/com.whatsapp/WhatsApp/.trash
 Android/media/com.whatsapp/WhatsApp/Backups
+Android/media/com.whatsapp/WhatsApp/Media/.Wamo
+Android/media/com.whatsapp/WhatsApp/Media/.udDHFY8K4Eqg
 Android/media/com.whatsapp/WhatsApp/Media/.Links
 Android/media/com.whatsapp/WhatsApp/Media/.Statuses
+Android/media/com.whatsapp/WhatsApp/Media/*.mcrypt1
+Android/media/com.whatsapp/WhatsApp/Media/*AI Media
+Android/media/com.whatsapp/WhatsApp/Media/*Bug Report*
 Lazylist
 **/.thumbnails
 **/.trashed-*
