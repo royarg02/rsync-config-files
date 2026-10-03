@@ -50,6 +50,8 @@ _build
 .local/share/Steam
 .var/app/com.valvesoftware.Steam/.local/share/Steam
 .steam
+.steampid
+.steampath
 /Steam
 .minecraft
 .PlayOnLinux
@@ -234,39 +236,39 @@ Thumbs.db
 .local/share/torbrowser
 
 ## Firefox-specific (see also Profile folder):
-.mozilla/firefox/*/Cache
+.config/mozilla/firefox/*/Cache
 
 ## In case Fx crashes dumps will be stored in this
-.mozilla/firefox/*/minidumps
+.config/mozilla/firefox/*/minidumps
 
 ## session-specific
-.mozilla/firefox/*/.parentlock
+.config/mozilla/firefox/*/.parentlock
 
 ## phishing database, recreated
-.mozilla/firefox/*/urlclassifier3.sqlite
+.config/mozilla/firefox/*/urlclassifier3.sqlite
 
 ## blacklisted extensions
-.mozilla/firefox/*/blocklist.xml
+.config/mozilla/firefox/*/blocklist.xml
 
 ## extension database, recreated on startup
-.mozilla/firefox/*/extensions.sqlite
-.mozilla/firefox/*/extensions.sqlite-journal
-.mozilla/firefox/*/extensions.rdf
-.mozilla/firefox/*/extensions.ini
-.mozilla/firefox/*/extensions.cache
+.config/mozilla/firefox/*/extensions.sqlite
+.config/mozilla/firefox/*/extensions.sqlite-journal
+.config/mozilla/firefox/*/extensions.rdf
+.config/mozilla/firefox/*/extensions.ini
+.config/mozilla/firefox/*/extensions.cache
 
 ## cached UI data, recreated
-.mozilla/firefox/*/XUL.mfasl
-.mozilla/firefox/*/XPC.mfasl
-.mozilla/firefox/*/xpti.dat
-.mozilla/firefox/*/compreg.dat
+.config/mozilla/firefox/*/XUL.mfasl
+.config/mozilla/firefox/*/XPC.mfasl
+.config/mozilla/firefox/*/xpti.dat
+.config/mozilla/firefox/*/compreg.dat
 
 ## cached plugin data, recreated
-.mozilla/firefox/*/pluginreg.dat
+.config/mozilla/firefox/*/pluginreg.dat
 
 ## profile specific
-.mozilla/firefox/*default*
-.mozilla/firefox/*private*
+.config/mozilla/firefox/*default*
+.config/mozilla/firefox/*private*
 
 ## SeaMonkey-specific (see also Profile folder):
 .mozilla/seamonkey/*/Cache
